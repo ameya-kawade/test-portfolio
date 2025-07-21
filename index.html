@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <!-- devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- lenis -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css">
+  <script type="module" crossorigin src="/assets/index-B0LQhgxs.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BFs6cw5V.css">
+</head>
+
+<body>
+
+  <!-- Overlay -->
+  <div class="h-fit w-screen flex relative" id="overlay">
+    <div class="absolute h-full w-full flex flex-col justify-center items-center text-white text-4xl" id="h1">
+      <h1>Shreya Kawade's portfolio</h1>
+    </div>
+    <div class="bars"></div>
+    <div class="bars"></div>
+    <div class="bars"></div>
+    <div class="bars"></div>
+    <div class="bars"></div>
+    <div class="bars"></div>
+    <div class="bars"></div>
+    <div class="bars"></div>
+    <div class="bars"></div>
+    <div class="bars"></div>
+  </div>
+
+  <!-- Main content -->
+  <div id="main">
+
+    <nav class="shadow-md sticky top-0 bg-white z-20" id="nav">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-end items-center h-13">
+
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#hero" class="text-gray-700 hover:text-blue-600 nav-link nav-anim">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-blue-600 nav-link nav-anim">About</a>
+            <a href="#skills" class="text-gray-700 hover:text-blue-600 nav-link nav-anim">Skills</a>
+            <a href="#projects-section" class="text-gray-700 hover:text-blue-600 nav-link nav-anim">Projects</a>
+            <a href="#contact" class="text-gray-700 hover:text-blue-600 nav-link nav-anim">Contact</a>
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden overflow-y-hidden px-4 pb-4 space-y-2 justify-center flex-col items-center z-20">
+        <a href="#hero" class="text-center  text-gray-700 hover:text-blue-600 nav-link">Home</a>
+        <a href="#about" class="text-center  text-gray-700 hover:text-blue-600 nav-link">About</a>
+        <a href="#skills" class="text-center  text-gray-700 hover:text-blue-600 nav-link">Skills</a>
+        <a href="#projects-section" class="text-center  text-gray-700 hover:text-blue-600 nav-link">Projects</a>
+        <a href="#contact" class="text-center  text-gray-700 hover:text-blue-600 nav-link">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="overflow-x-hidden h-screen flex items-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white" id="hero">
+
+      <div class="px-4 flex-1 montserrat-font">
+
+        <div class="flex flex-col justify-center items-center text-center">
+          <p class="text-lg md:text-xl mb-6 hero-anim overflow-hidden">Hi, I'm</p>
+          <h2 class="text-4xl md:text-6xl font-extrabold mon mb-4 hero-anim">Shreya Kawade</h2>
+          <p class="text-lg md:text-xl mb-6 hero-anim overflow-hidden">Software Engineer</p>
+          <div class="flex gap-10 items-center text-5xl" id="icons">
+            <!-- <i data-lucide="mail" class="icon-anim h-16 w-16" />
+            <i data-lucide="github" class="icon-anim h-16 w-16" />
+            <i data-lucide="linkedin" class="icon-anim h-16 w-16" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="overflow-x-hidden py-[150px] bg-white font-sans">
+      <div class="container mx-auto px-4 max-w-3xl">
+        <h2 class="text-4xl font-bold mb-6 text-gray-900" id="about-title">About Me</h2>
+
+        <p class="text-gray-700 mb-6 text-lg leading-relaxed" id="about-left">
+          I am a <strong class="font-semibold text-gray-900">results-driven Backend Developer</strong> with hands-on
+          experience in architecting and delivering <strong class="font-semibold text-gray-900">scalable
+            microservices</strong> using <strong class="font-semibold text-gray-900">Spring Boot</strong> and
+          <strong class="font-semibold text-gray-900">cloud-native solutions on AWS</strong>. With a strong
+          foundation in <strong class="font-semibold text-gray-900">designing robust APIs</strong>, <strong
+            class="font-semibold text-gray-900">implementing secure backend logic</strong>, and <strong
+            class="font-semibold text-gray-900">optimizing system performance</strong>, I bring a pragmatic and
+          engineering-first approach to modern software development.
+        </p>
+
+        <p class="text-gray-700 mb-6 text-lg leading-relaxed" id="about-right">
+          Over the course of my career, I have contributed to multiple <strong
+            class="font-semibold text-gray-900">application modernization initiatives</strong>, migrating <strong
+            class="font-semibold text-gray-900">legacy monoliths</strong> to <strong
+            class="font-semibold text-gray-900">cloud-optimized microservices</strong>. My work has consistently
+          focused on <strong class="font-semibold text-gray-900">improving maintainability</strong>, <strong
+            class="font-semibold text-gray-900">reducing technical debt</strong>, and aligning backend architecture
+          with <strong class="font-semibold text-gray-900">evolving business needs</strong>.
+        </p>
+
+        <h3 class="text-2xl font-semibold mb-4 text-gray-800" id="about-spec">I specialize in:</h3>
+        <ul class="text-left list-disc list-inside text-gray-700 text-base mb-6 leading-relaxed" id="about-spec-ul">
+          <li class="mb-2"><strong class="font-semibold text-gray-900">Microservices development</strong> using
+            Spring Boot and Spring Cloud</li>
+          <li class="mb-2">AWS services like <strong class="font-semibold text-gray-900">EC2</strong>, <strong
+              class="font-semibold text-gray-900">Lambda</strong>, <strong
+              class="font-semibold text-gray-900">S3</strong>, <strong class="font-semibold text-gray-900">RDS</strong>,
+            <strong class="font-semibold text-gray-900">API
+              Gateway</strong>, and <strong class="font-semibold text-gray-900">CloudFormation</strong>
+          </li>
+          <li class="mb-2"><strong class="font-semibold text-gray-900">CI/CD automation</strong> and <strong
+              class="font-semibold text-gray-900">Infrastructure as Code</strong></li>
+          <li class="mb-2"><strong class="font-semibold text-gray-900">Containerization</strong> and
+            orchestration using Docker and ECS/EKS</li>
+          <li class="mb-2"><strong class="font-semibold text-gray-900">Database design and optimization</strong>
+            for PostgreSQL, MySQL, and MongoDB</li>
+          <li>
+            I am passionate about building <strong class="font-semibold text-gray-900">resilient</strong>, <strong
+              class="font-semibold text-gray-900">maintainable</strong>, and <strong
+              class="font-semibold text-gray-900">scalable systems</strong>, and thrive in <strong
+              class="font-semibold text-gray-900">collaborative agile teams</strong> where <strong
+              class="font-semibold text-gray-900">continuous improvement</strong> and <strong
+              class="font-semibold text-gray-900">cloud innovation</strong> are the norm.
+          </li>
+        </ul>
+
+        <p class="text-gray-700 text-lg leading-relaxed" id="about-last">
+          If you're looking for a <strong class="font-semibold text-gray-900">backend engineer</strong> who can
+          bridge <strong class="font-semibold text-gray-900">legacy systems</strong> and <strong
+            class="font-semibold text-gray-900">modern cloud-native architectures</strong>, I'm confident I can
+          deliver impactful solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="overflow-x-hidden py-16 bg-gray-100 open-sans-font">
+      <div class="container mx-auto px-4 max-w-5xl">
+        <h3 class="text-3xl font-bold text-center mb-10" id="skills-title">Technical Skills</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-gray-800">
+
+          <div class="skills-left">
+            <h4 class="text-xl font-semibold mb-4">Backend Development</h4>
+            <ul class="grid grid-cols-2 gap-2 text-sm">
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-spring-plain colored text-xl"></i>Spring Boot
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-spring-plain colored text-xl"></i>Spring Framework
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-spring-plain colored text-xl"></i>JPA
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-hibernate-plain colored text-xl"></i>Hibernate
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-apache-plain colored text-xl"></i>Maven
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-mysql-plain colored text-xl"></i>SQL / MySQL
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-postgresql-plain colored text-xl"></i>PostgreSQL
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="skills-right">
+            <h4 class="text-xl font-semibold mb-4">DevOps & Cloud</h4>
+            <ul class="grid grid-cols-2 gap-2 text-sm">
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-amazonwebservices-plain-wordmark colored text-xl"></i>AWS
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-docker-plain colored text-xl"></i>Docker
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-jenkins-plain colored text-xl"></i>Jenkins
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-git-plain colored text-xl"></i>Git
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-bitbucket-original colored text-xl"></i>Bitbucket
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-github-original colored text-xl"></i>GitHub
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="skills-left">
+            <h4 class="text-xl font-semibold mb-4">Tools & Platforms</h4>
+            <ul class="grid grid-cols-2 gap-2 text-sm">
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-postman-plain colored text-xl"></i>Postman
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <i class="devicon-jira-plain colored text-xl"></i>Jira
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <img src="/assets/logo-iGVu11IX.svg" class="w-[5em]" />Honeycomb
+              </li>
+              <li class="bg-white p-2 rounded shadow flex items-center gap-2 flex-wrap">
+                <img src="/assets/splunk-CPi1ctoy.jpg" class="w-[3em]" />Splunk
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="overflow-x-hidden py-16 bg-gray-50" id="projects-section">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-12">Projects</h3>
+        <div class="grid md:grid-cols-3 gap-8" id="projects">
+          <!-- Projects will be populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="overflow-x-hidden py-16 bg-white">
+      <div class="container mx-auto px-4 max-w-xl text-center">
+        <h3 class="text-3xl font-bold mb-6">Let's Connect</h3>
+        <p class="text-gray-600 mb-6">I'm open to freelance projects, collaborations, or just a friendly chat.</p>
+        <a href="mailto:kawadeshreya28@gmail.com"
+          class="bg-blue-600 text-white px-6 py-3 rounded font-semibold hover:bg-blue-700 transition">
+          Send an Email
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
